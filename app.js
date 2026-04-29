@@ -26,7 +26,7 @@ const corsOptions = {
       return;
     }
 
-    callback(new AppError(`Origin ${origin} is not allowed by CORS please ensure req from allowed IP and ports`, 403));
+    callback(new AppError(`Origin ${origin} is not allowed by CORS `, 403));
   },
   methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
